@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "fact_sales.csv",
 				"folderPath": "csvfiles",
 				"fileSystem": "onlinetrain-destination"
 			},
