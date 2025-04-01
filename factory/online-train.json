@@ -1,0 +1,9 @@
+{
+	"name": "online-train",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5824deb0-9eda-4ff8-ae4d-ba1e10208d4e",
+		"tenantId": "2383ab74-b170-471e-9381-71600bf9545b"
+	}
+}
