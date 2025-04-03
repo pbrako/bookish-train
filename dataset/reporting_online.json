@@ -1,0 +1,32 @@
+{
+	"name": "reporting_online",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onlinetrain_source",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"r_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().r_filename",
+					"type": "Expression"
+				},
+				"folderPath": "csvfilesonline",
+				"fileSystem": "reporting-online125"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
